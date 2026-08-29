@@ -1,0 +1,36 @@
+/* definindo variáveis para cores */
+:root {
+    --primary: #026E81;
+    --secondary: #00ABBD;
+    /* tertiary não é um padrão do Bootstrap, mas pode ser adicionado! */
+    --tertiary: #72F2EB;
+    --success: #0099DD;
+    --info: #A1C7E0;
+    --warning: #FF9933;
+    --danger: #E3371E;
+}
+
+.border-primary-subtle {
+    border-color: #0000bf !important;
+
+}
+
+.border-secundary-subtle {
+    border-color: #f7f70c !important;
+}
+
+.border-tertiary-subtle {
+    border-color: #ffffff !important;
+}
+
+.border-6 {
+    border-width: 8px !important;
+}
+
+.border-7 {
+    border-width: 10px !important;
+}
+
+.border-8 {
+    border-width: 12px !important;
+}
