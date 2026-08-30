@@ -1,26 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
 /* definindo variáveis para cores */
 :root {
-    --primary: #026E81;
-    --secondary: #00ABBD;
+    --primary: #0000BF;
+    --secondary: #F7F70C;
     /* tertiary não é um padrão do Bootstrap, mas pode ser adicionado! */
-    --tertiary: #72F2EB;
+    --tertiary: #ffff;
     --success: #0099DD;
     --info: #A1C7E0;
     --warning: #FF9933;
     --danger: #E3371E;
+    --textMenu: #1A1A2E;
+    --textDefaultColor: #333333;
+}
+
+body {
+    font-family: "Nunito", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bebas Neue", sans-serif !important;
+}
+
+.nav-item {
+    a {
+        font-weight: 700 !important;
+        color: var(--textMenu);
+
+        &:hover {
+            color: var(--primary) !important;
+        }
+    }
+
+
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secundary {
+    background-color: var(--secondary) !important;
 }
 
 .border-primary-subtle {
-    border-color: #0000bf !important;
+    border-color: var(--primary) !important;
 
 }
 
 .border-secundary-subtle {
-    border-color: #f7f70c !important;
+    border-color: var(--secondary) !important;
 }
 
 .border-tertiary-subtle {
-    border-color: #ffffff !important;
+    border-color: var(--tertiary) !important;
 }
 
 .border-6 {
@@ -33,4 +73,33 @@
 
 .border-8 {
     border-width: 12px !important;
+}
+
+.text-blue {
+    color: var(--primary);
+}
+
+.buttonActive {
+    &:active {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .border-b-none {
+        border-bottom: 0 !important;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container-fluid-responsive {
+        width: 100%;
+    }
 }
