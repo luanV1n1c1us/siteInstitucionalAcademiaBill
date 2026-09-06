@@ -25,7 +25,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.display-font {
     font-family: "Bebas Neue", sans-serif !important;
 }
 
@@ -40,6 +41,22 @@ h6 {
     }
 
 
+}
+
+.gap-extremidades {
+    column-gap: 50%;
+}
+
+.fw-extrabold {
+    font-weight: 900 !important;
+}
+
+.hero-logo-format {
+    max-width: 15%;
+    height: 40% !important;
+    max-height: 220px;
+    overflow: hidden;
+    max-width: 220px;
 }
 
 .bg-gradiente {
@@ -62,6 +79,10 @@ h6 {
 
 .bg-secundary {
     background-color: var(--secondary) !important;
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary);
 }
 
 .border-primary-subtle {
@@ -93,6 +114,10 @@ h6 {
     color: var(--primary);
 }
 
+.text-yellow {
+    color: var(--secondary);
+}
+
 .buttonActive {
     &:active {
         box-shadow: none !important;
@@ -119,5 +144,13 @@ h6 {
 
     .container-fluid-responsive {
         width: 100%;
+    }
+
+    .flex-column-responsive {
+        flex-direction: column !important;
+    }
+
+    .gap-responsive {
+        gap: 5% 0 !important;
     }
 }

@@ -10,6 +10,8 @@
     <!-- Link Bootstrap  *CSS*-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Link Icones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- CSS Customizado -->
     <link rel="stylesheet" href="./css/custom.css" type="text/css">
 </head>
@@ -39,10 +41,6 @@
                         <li class="nav-item border border-top-0 border-start-0 border-end-0 border-2 border-b-none">
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
-                        <li
-                            class="nav-item border border-top-0 border-start-0 border-end-0 border-2 border-opacity-25 border border-b-none">
-                            <a href="sobre.html" class="nav-link">Sobre</a>
-                        </li>
                         <li class="nav-item border border-top-0 border-start-0 border-end-0 border-2 border-b-none">
                             <a href="servicos.html" class="nav-link">Serviços</a>
                         </li>
@@ -68,7 +66,23 @@
             </nav>
             <!-- #endregion -->
         </header>
-        <div id="hero" class="container-fluid h-75 p-0 position-config bg-gradiente position-responsive">
+        <div id="hero"
+            class="d-flex justify-content-center align-items-center container-fluid h-75 p-0 position-config bg-gradiente position-responsive gap-extremidades flex-row flex-column-responsive gap-responsive">
+
+            <div class="blue rounded-circle border border-4 border-tertiary-subtle p-0 hero-logo-format">
+                <div
+                    class="yellow rounded-circle border border-5 border-secundary-subtle overflow-hidden h-100 bg-tertiary">
+                    <img src="./assets/logo.svg" alt="Logo" class="img-fluid h-100">
+                </div>
+            </div>
+
+            <div>
+                <p class="display-3 m-0 display-font text-light mb-4">TRANSFORMANDO <br> VIDAS ATRAVÉS DA <br>
+                    <span class="text-yellow">NATAÇÃO</span>
+                </p>
+                <button class="btn bg-secundary text-blue fw-extrabold rounded-pill fs-5">Quero Fazer Parte <i
+                        class="bi bi-arrow-right"></i></button>
+            </div>
             <img src="./assets/onda.svg" class="img-fluid w-100 position-absolute bottom-negative" aria-hidden="true">
         </div>
     </div>
