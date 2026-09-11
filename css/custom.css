@@ -43,6 +43,14 @@ h6,
 
 }
 
+.nav-link:hover {
+    color: var(--tertiary);
+}
+
+.active {
+    background-color: var(--tertiary);
+}
+
 .font-nunito {
     font-family: "Nunito", sans-serif !important;
 }
