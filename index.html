@@ -5,23 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="discription" content="Site oficial da Academia do Bill.">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg">
     <title>Academia do Bill</title>
     <!-- Link Bootstrap  *CSS*-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Link Icones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- CSS Customizado -->
     <link rel="stylesheet" href="./css/custom.css" type="text/css">
 </head>
 
 <body>
-    <!-- Container -->
-    <div class="container-fluid p-0">
-        <header>
+
+    <div class="container-fluid p-0 min-h position-relative bg-primary overflow-hidden">
+        <!-- Container -->
+        <header class="position-sticky top-0 z-3 bg-light">
+            <!-- #region menu de navegação -->
             <nav class="navbar navbar-expand-lg px-4 py-1">
                 <a class="navbar-brand m-0 d-flex flex-row gap-4 align-items-center " href="#">
-                    <div class="blue rounded-circle border border-6 border-primary-subtle p-0 d-none d-lg-block">
-                        <div class="yellow rounded-circle border border-7 border-secundary-subtle overflow-hidden">
-                            <img src="./assets/logo.svg" alt="Logo" class="img-fluid" width="55" height="55">
+                    <div class="blue rounded-circle border border-4 border-primary-subtle p-0 d-none d-lg-block">
+                        <div class="yellow rounded-circle border border-5 border-secundary-subtle overflow-hidden">
+                            <img src="./assets/logo.svg" alt="Logo" class="img-fluid" width="40" height="30">
                         </div>
                     </div>
                     <h1 class="m-0 fs-3 fw-normal text-blue">Academia do Bill</h1>
@@ -35,10 +40,6 @@
                     <ul class="navbar-nav d-flex justify-content-end container-fluid p-0 me-lg-4 mb-lg-0 mb-3">
                         <li class="nav-item border border-top-0 border-start-0 border-end-0 border-2 border-b-none">
                             <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li
-                            class="nav-item border border-top-0 border-start-0 border-end-0 border-2 border-opacity-25 border border-b-none">
-                            <a href="sobre.html" class="nav-link">Sobre</a>
                         </li>
                         <li class="nav-item border border-top-0 border-start-0 border-end-0 border-2 border-b-none">
                             <a href="servicos.html" class="nav-link">Serviços</a>
@@ -60,13 +61,264 @@
                     <a href="cadastro.html"
                         class="btn btn-primary  py-2 text-light fw-bold bg-primary  border border-0 me-lg-3 mb-lg-0 mb-3 container-fluid-responsive">Cadastro</a>
                     <a href="login.html"
-                        class="btn  btn-primary text-blue px-4 py-2 border border-0 bg-secundary fw-bold container-fluid-responsive">Login</a>
-
-
+                        class="btn  btn-primary text-blue px-4 py-2 border border-0 bg-secundary fw-bold container-fluid-responsive mb-2 mb-lg-0">Login</a>
                 </div>
             </nav>
+            <!-- #endregion -->
         </header>
+        <div id="hero" class="position-relative min-h-hero mb-4">
+            <div
+                class="d-flex justify-content-center align-items-center container-fluid h-100 position-config bg-gradiente position-responsive gap-extremidades flex-row flex-column-responsive gap-responsive">
+                <div class="blue rounded-circle border border-4 border-tertiary-subtle p-0 hero-logo-format">
+                    <div
+                        class="yellow rounded-circle border border-5 border-secundary-subtle overflow-hidden h-100 bg-tertiary">
+                        <img src="./assets/logo.svg" alt="Logo" class="img-fluid h-100">
+                    </div>
+                </div>
+
+                <div>
+                    <p class="display-3 m-0 display-font text-light mb-4">TRANSFORMANDO <br> VIDAS ATRAVÉS DA <br>
+                        <span class="text-yellow">NATAÇÃO</span>
+                    </p>
+                    <button class="btn bg-secundary text-blue fw-extrabold rounded-pill fs-5">Quero Fazer Parte <i
+                            class="bi bi-arrow-right"></i></button>
+                </div>
+                <img src="./assets/onda.svg" class="img-fluid w-100 position-absolute bottom-negative"
+                    aria-hidden="true">
+            </div>
+        </div>
+        <main class="position-relative">
+            <!-- Sobre -->
+            <section class="d-flex flex-column align-items-center">
+                <h3 id="title" class="bg-secundary w-50 text-center p-3 mt-3 mb-5 text-blue rounded-4">
+                    SOBRE
+                </h3>
+                <div id="layout" class="">
+                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <div class="card container-xl mb-2 ps-0 border border-0 overflow-hidden"
+                            style="max-width: 450px;">
+                            <div class="row g-0 h-100">
+                                <div class="col-md-4 bg-primary bg-gradiente-card">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MISSÃO</h5>
+                                        <p class="card-text">Promover saúde, bem-estar e qualidade
+                                            de vida por meio da prática de atividades
+                                            físicas, oferecendo um ambiente
+                                            acolhedor, equipamentos adequados e
+                                            acompanhamento profissional para
+                                            auxiliar os alunos no alcance de seus
+                                            objetivos.</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card container-xl mb-2 ps-0 border border-0 overflow-hidden"
+                            style="max-width: 450px;">
+                            <div class="row g-0 h-100">
+                                <div class="col-md-4 bg-primary bg-gradiente-card">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">VALORES</h5>
+                                        <p class="card-text">Ser reconhecida como uma academia de
+                                            referência na região, destacando-se pela
+                                            qualidade dos serviços prestados, pela
+                                            satisfação dos alunos e pelo
+                                            compromisso com a promoção da saúde
+                                            e do desenvolvimento físico.</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-xl mb-2 ps-0 border border-0 overflow-hidden" style="max-width: 450px;">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4 bg-primary bg-gradiente-card">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">VISÃO</h5>
+                                    <p class="card-text">Nossos valores são baseados no
+                                        compromisso com a saúde, no respeito a
+                                        cada aluno e na busca constante pela
+                                        evolução pessoal. Valorizamos a disciplina,
+                                        a dedicação e o incentivo mútuo, criando
+                                        um ambiente acolhedor.</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br>
+            <!-- About More -->
+            <section class="d-flex flex-column align-items-center">
+                <h3 id="title" class="bg-secundary w-50 text-center p-3 mt-3 mb-5 text-blue rounded-4">
+                    UM POUCO MAIS SOBRE NÓS
+                </h3>
+                <div class="d-flex gap-2 flex-wrap justify-content-center px-4 px-lg-0">
+                    <div class="card border border-0" style="max-width: 304px; width: 100%;">
+                        <img src="./assets/metas.jpg" class="card-img-top" alt="homem nadando em braçadas">
+                        <div class="card-body">
+                            <h6 class="card-title font-nunito fw-extrabold">Relatos</h6>
+                            <p class="card-text">Transforme seus objetivos em resultados.
+                                Nossas metas são incentivar a evolução, a
+                                saúde e o bem-estar de cada aluno, além
+                                da liberdade do mesmo.</p>
+                            <a href="relatos.html"
+                                class="btn bg-secundary text-blue fw-extrabold rounded-pill fs-6">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="card border border-0" style="max-width: 304px; width: 100%;">
+                        <img src="./assets/planos.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title font-nunito fw-extrabold">Planos</h6>
+                            <p class="card-text">Oferecemos planos acessíveis e flexíveis
+                                para atender diferentes objetivos. Escolha a
+                                opção ideal para sua rotina e comece sua
+                                evolução hoje mesmo.</p>
+                            <a href="planos.html"
+                                class="btn bg-secundary text-blue fw-extrabold rounded-pill fs-6">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br>
+            <section class="d-flex flex-column align-items-center">
+                <h3 id="title" class="bg-secundary w-50 text-center p-3 mt-3 mb-5 text-blue rounded-4">
+                    POR QUE NÓS
+                </h3>
+                <div class="container-fluid" style="max-width: 800px;">
+                    <ul class="nav nav-tabs border-bottom border-secundary-subtle d-flex justify-content-center rounded-top-2"
+                        id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-extrabold text-yellow hooverText" id="home-tab"
+                                data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                                aria-controls="home-tab-pane" aria-selected="true">Supere seus limites na água</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-extrabold text-yellow hooverText" id="profile-tab"
+                                data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Aprenda com quem entende</button>
+                        </li>
+                        <li class="nav-item hooverText" role="presentation">
+                            <button class="nav-link fw-extrabold text-yellow " id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">Evolua no seu ritmo</button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active rounded-bottom-2" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <p class="p-5">Na natação, cada pessoa tem um objetivo diferente. Seja aprender a
+                                nadar,
+                                melhorar sua
+                                técnica, aumentar o condicionamento físico ou se preparar para competições, nossos
+                                treinos são pensados para ajudar você a evoluir de forma consistente. Aqui, cada aula é
+                                uma oportunidade de ganhar confiança, desenvolver suas habilidades e chegar cada vez
+                                mais perto dos seus objetivos.</p>
+                        </div>
+                        <div class="tab-pane fade rounded-bottom-2" id="profile-tab-pane" role="tabpanel"
+                            aria-labelledby="profile-tab" tabindex="0">
+                            <p class="p-5">Na natação, cada pessoa tem um objetivo diferente. Seja aprender a
+                                nadar, melhorar sua
+                                técnica, aumentar o condicionamento físico ou se preparar para competições, nossos
+                                treinos são pensados para ajudar você a evoluir de forma consistente. Aqui, cada aula é
+                                uma oportunidade de ganhar confiança, desenvolver suas habilidades e chegar cada vez
+                                mais perto dos seus objetivos.</p>
+                        </div>
+                        <div class="tab-pane fade rounded-bottom-2" id="contact-tab-pane" role="tabpanel"
+                            aria-labelledby="contact-tab" tabindex="0">
+                            <p class="p-5">
+                                Contar com profissionais especializados faz toda a diferença na sua evolução dentro da
+                                água. Nossos professores acompanham cada aluno de perto, orientando os movimentos,
+                                corrigindo a técnica e adaptando os exercícios de acordo com o nível e os objetivos de
+                                cada pessoa.
+
+                                <strong class="d-block">Mais do que ensinar a nadar, estamos aqui para ajudar você a
+                                    nadar melhor, com
+                                    segurança, confiança e evolução constante.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="py-5 pb-4">
+            <div class="container">
+                <div class="row g-4 mb-4">
+
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="footer-brand">
+                            <div class="brand-name fw-extrabold">Academia do Bill – Jaú</div>
+                            <p>Transformando vidas através da natação desde 2005. Seu bem-estar é nossa missão.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="footer-col">
+                            <h4 class="fw-extrabold font-nunito">Navegação</h4>
+                            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="servicos.html">Serviços</a></li>
+                                <li><a href="planos.html">Planos</a></li>
+                                <li><a href="sobre.html">Sobre</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="footer-col">
+                            <h4 class="fw-extrabold font-nunito">Suporte</h4>
+                            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                <li><a href="contato.html">Contato</a></li>
+                                <li><a href="#">Política de Privacidade</a></li>
+                                <li><a href="#">Termos de Uso</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3" id="footer">
+                        <div class="footer-col">
+                            <h4 class="fw-extrabold font-nunito">Contato</h4>
+                            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                <li><a href="#footer"> <i class="bi bi-shop"></i> Jaú – SP</a></li>
+                                <li><a href="#footer"> <i class="bi bi-telephone"></i> (14) 99776-1463</a></li>
+                                <li><a href="#footer"> <i class="bi bi-envelope"></i> contato@academiabill.com.br</a>
+                                </li>
+                                <li><a href="#footer"> <i class="bi bi-clock"></i> Seg–Sex: 7:30–12h e das 14:00-21h</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div
+                    class="footer-bottom border-top pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                    <span>© 2026 Academia do Bill – Todos os direitos reservados</span>
+
+                    <div class="social-links d-flex gap-2">
+                        <a class="social-btn" href="https://www.facebook.com/academiabilljau/?locale=pt_BR"><i
+                                class="bi bi-facebook"></i></a>
+                        <a class="social-btn" href="https://www.instagram.com/academiadobill/"><i
+                                class="bi bi-instagram"></i></a>
+                        <a class="social-btn" href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+    <!-- Fim do container-->
+
+
 
 
 
